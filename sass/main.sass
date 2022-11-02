@@ -1,0 +1,836 @@
+html *
+    outline: none
+    padding: 0
+    margin: 0
+    
+
+body
+    font-family: 'ProximaNova-Light', sans-serif
+    background-color: #160c4e
+    color: #FFFFFF
+    scroll-behavior: smooth
+
+    .top-wrapper
+        position: relative
+        overflow-x: hidden
+        .pseudo1
+            position: absolute
+            width: 1189px
+            height: 1189px
+            top: -570px
+            right: -255px
+            border-radius: 50%
+            background: radial-gradient(77.43% 77.43% at 7.93% 56.3%, #5600B5 0%, rgba(86, 0, 181, 0) 100%)
+            -webkit-transform: rotate(-11.25deg)
+            transform: rotate(-11.25deg)
+            z-index: -1
+            @media screen and (max-width: 1050px)
+                width: 561px
+                height: 561px
+                top: -224px
+                right: -364px
+            
+        .pseudo2
+            position: absolute
+            width: 842.91px
+            height: 842.91px
+            top: 170px
+            left: -185px
+            border-radius: 50%
+            background:  radial-gradient(82.64% 82.64% at 86.53% 28.21%, #5600B5 0%, rgba(86, 0, 181, 0.970002) 0.01%, rgba(86, 0, 181, 0) 100%) 
+            -webkit-transform: rotate(-9deg)
+            transform: rotate(-9deg)
+            @media screen and (max-width: 1050px)
+                width: 484px
+                height: 484px
+                top: 218px
+                left: -277px
+
+
+::-webkit-scrollbar
+    width: 6px
+    cursor: pointer
+    
+    /* Track */
+::-webkit-scrollbar-track
+    background: #160c4e
+
+    /* Handle */
+::-webkit-scrollbar-thumb
+    background: #ff6732
+    scrollbar-width: thin
+    border-radius: 20px
+//     cursor: pointer
+    
+
+::selection
+    background-color: #ff6732
+
+.swiper
+    user-select: none
+
+/* width */
+
+.w-100
+    width: 100% 
+
+ul, ol
+    li
+        list-style-type: none
+
+img
+    object-fit: cover
+
+img, svg
+    vertical-align: middle
+
+a
+    text-decoration: none
+    color: #FFFFFF
+    transition: .3s
+
+.button--active
+    font-family: 'ProximaNova-Bold', sans-serif
+    font-weight: 700
+    color: #FFFFFF
+    text-align: center
+    width: fit-content
+    font-size: 23px
+    line-height: 29px
+    background: #FF6732
+    border-radius: 32.2521px
+    border: 1px solid transparent
+    transition: 0.3s ease-out
+    &:hover
+        background-color: #ff4b0c
+        border-color: #fe4200
+        color: #FFFFFF
+        
+
+.swiper::selection 
+    background: none
+
+    
+h1, h2
+    color: #FFFFFF
+    font-weight: 600
+    font-size: 64px
+    line-height: 77px
+    @media (max-width: 1200px)
+        font-size: 40px
+        line-height: 125% 
+    @media (max-width: 768px)
+        font-size: 35px
+        line-height: 125%  
+
+h3
+    font-family: 'ProximaNova-Bold', sans-serif
+    font-weight: 700
+    font-size: 35px
+    line-height: 125%   
+
+h4
+    font-weight: 700
+    font-size: 24px
+    line-height: 125%   
+
+.text-bold
+    font-weight: 600
+    font-size: 35px
+    line-height: 125%
+    @media (max-width: 768px)
+        font-size: 24px !important
+    
+
+.text, p
+    font-weight: 400
+    font-size: 18px
+    line-height: 125%
+
+.underline
+    text-decoration: underline
+
+.img-fluid
+    max-width: 100%
+    height: auto
+
+// colors
+.white
+    color:#FFFFFF
+
+.grey
+    color: #818699        
+
+// sizes
+.mb-12
+    margin-bottom: 12px
+
+.mb-16
+    margin-bottom: 16px    
+
+.mb-20
+    margin-bottom: 20px
+
+.mb-24
+    margin-bottom: 24px
+
+.mb-32
+    margin-bottom: 32px
+
+.mb-60
+    margin-bottom: 60px
+
+.mb-80
+    margin-bottom: 80px
+
+.pb-65
+    padding-bottom: 65px    
+
+.pb-140
+    padding-bottom: 140px
+    @media (max-width: 1200px)
+        padding-bottom: 100px
+    @media (max-width: 991px)
+        padding-bottom: 80px
+
+.pb-160
+    padding-bottom: 160px    
+    @media (max-width: 1200px)
+        padding-bottom: 120px
+    @media (max-width: 991px)
+        padding-bottom: 80px
+
+.pb-165
+    padding-bottom: 160px
+    @media (max-width: 1200px)
+        padding-bottom: 120px
+    @media (max-width: 991px)
+        padding-bottom: 80px
+
+.pb-180
+    padding-bottom: 180px    
+    @media (max-width: 1200px)
+        padding-bottom: 140px
+    @media (max-width: 991px)
+        padding-bottom: 100px
+
+.mr-80
+    margin-right: 80px
+
+.mr-110
+    margin-right: 80px    
+
+@media (min-width: 1200px)
+    .d-xl-block 
+        display: flex !important
+
+@media (min-width: 1400px)
+.container, .container-lg, .container-md, .container-sm, .container-xl, .container-xxl 
+    max-width: 1100px
+
+.container-limit
+    max-width: 1140px
+    width: 100%
+    margin-right: auto
+    margin-left: auto
+    padding-left: 30px
+    padding-right: 30px 
+
+#burgerModal
+    position: fixed
+    top: 0
+    right: 0
+    left: 0
+    bottom: 0
+    width: 100%
+    height: 100%
+    overflow-x: hidden
+    overflow-y: auto
+    outline: 0
+
+    .button-burger
+        cursor: pointer
+
+    .modal-dialog
+        max-width: none
+        transform: none
+        margin: 0
+        height: 100%
+        width: auto
+        position: relative
+        pointer-events: none
+
+
+        .modal-content
+            min-height: 100%
+            position: relative
+            display: flex
+            flex-direction: column
+            width: 80%
+            pointer-events: auto
+            background:  #160c4e
+            background-clip: padding-box
+            border-radius: 0.3rem
+            outline: none
+            border: none
+    .modal-list
+        list-style: none
+        a:hover
+            transform: none
+            transition: 0.3s
+            color: #FF6732
+
+
+.header
+    position: relative
+    transition: 0.3s
+    position: fixed
+    top: 0
+    left: 0
+    right: 0
+    a
+        &:hover
+            color: #FFFFFF
+            border-bottom: 1px solid #fff
+            transform: none
+    .header_wrapper
+        padding: 24px 0 32px 0
+        display: flex
+        justify-content: center
+        align-items: center
+        gap: 90px
+        @media (max-width: 1201px)
+            justify-content: space-between
+            padding: 15px 0
+
+        .logo
+            &:hover
+                transform: none
+                border: none
+
+        .header_navigation
+            display: flex
+            gap: 24px
+            align-items: center
+
+            .header_link
+                white-space: nowrap
+                letter-spacing: .2px
+
+            .header_link--active
+                padding: 12px 24px
+                background: #FF6732
+                border-radius: 420px
+                font-family: 'ProximaNova-Bold', sans-serif
+                font-weight: 700
+                border: 1px solid transparent
+                &:hover
+                    background-color: #ff4b0c
+                    border-color: #fe4200
+                    border-bottom-color: #ff6732
+
+            .header_link--pseudo
+                position: relative
+                padding-left: 26px 
+                &::before
+                    content: ""
+                    position: absolute
+                    background-image: url('/svg/linkPseudo.svg')
+                    width: 25px
+                    height: 21px
+                    left: -7px
+                    background-repeat: no-repeat
+    .login-link
+        padding-bottom: 1px
+        &:hover
+            border-bottom: 1px solid #FFFFFF
+            transform: none
+        @media (max-width: 1199px)
+            position: absolute
+            right: 110px
+.header.tiny
+    background: #160c4e
+    box-shadow: 0 4px 25px rgba(0, 0, 0, 0.07)
+    z-index: 100
+
+.banner
+    padding-top: 200px
+    @media (max-width: 990px)
+        padding-top: 150px
+    
+    .row
+        border-bottom: 2px solid #FFFFFF
+        @media (max-width: 992px)
+            border: none
+        .mainLogo-wrapper
+            max-width: 536px
+            margin-bottom: 72px
+        .mainBanner-wrapper
+            max-width: 470px
+            @media (max-width: 992px)
+                height: 100%
+            img
+                @media (max-width: 992px)
+                    height: 100%
+                    object-fit: contain
+        .col-lg-6, .col-md-6, .col-sm-6
+            z-index: 1
+        .col--right
+            padding-left: 60px
+            padding-top: 60px
+            @media (max-width: 768px)
+                display: flex
+                justify-content: center
+        .banner_subtitle
+            font-weight: 800
+            margin-bottom: 15px
+        .banner_description
+            font-weight: 400
+            font-size: 24px
+            line-height: 29px  
+        .banner_btn
+            padding: 18px 33px
+
+.samsung-description
+    .logo_box
+        display: flex
+        justify-content: center
+        gap: 45px
+        padding-bottom: 110px
+        @media (max-width: 992px)
+            padding-bottom: 50px
+    .row
+        border-bottom: 2px solid #FFFFFF  
+        @media (max-width: 992px)
+            border: none
+        h3
+            @media (max-width: 768px)
+                margin-bottom: 24px
+        .col--right
+            padding-left: 100px
+            padding-bottom: 135px
+            @media (max-width: 992px)
+                padding-left: 15px
+                padding-bottom: 0px
+
+.advantages
+    overflow: hidden
+    .margin
+        width: 1110px
+        margin: 0 auto
+        z-index: 5
+        position: relative
+        @media screen and (max-width: 1300px)
+            width: 1100px
+        @media screen and (max-width: 1200px)
+            width: 940px
+        @media screen and (max-width: 1050px)
+            width: 100%
+            padding: 0 30px
+        .advantages_title
+            margin: 0 0 108px
+            justify-content: center
+        .circle-advantages
+            padding: 230px 0 185px
+            justify-content: center
+            gap: 40px
+            @media screen and (max-width: 1050px)
+                padding: 185px 0 100px
+                flex-direction: column
+                align-items: center
+            .box-circle
+                position: relative
+                max-width: 248px
+                @media screen and (max-width: 1200px)
+                    max-width: 180px
+                @media screen and (max-width: 1050px)
+                    max-width: 400px
+                    margin-bottom: 100px
+                .circle
+                    position: absolute
+                    width: 302px
+                    height: 302px
+                    border-radius: 50%
+                    left: -50px
+                    top: -90px
+                .advantage_box-desc
+                    position: relative
+                    max-width: 218px
+                    h4
+                        position: relative
+                        margin-bottom: 5px
+                        @media (max-width: 768px)
+                            font-size: 16px
+                    p
+                        position: relative
+                        font-weight: 400
+                        font-size: 16px
+                        line-height: 125%
+                        @media (max-width: 1100px)
+                            font-size: 14px
+                    img
+                        position: absolute
+                        top: -135px
+                        left: -35px 
+    .advantages_description
+        align-items: flex-start
+        max-width: 735px
+        h3
+            font-size: 40px
+            line-height: 50px
+            font-weight: 700
+            margin-bottom: 24px
+        p
+            font-size: 20px
+            line-height: 25px
+            max-width: 555px
+    .box-circle:nth-child(1) .circle
+        background: linear-gradient(92.58deg, #E96F2A 2.16%, rgba(233, 111, 42, 0) 98.06%)
+    .box-circle:nth-child(2) .circle
+        background: linear-gradient(92.58deg, #A930AB 2.16%, rgba(169, 48, 171, 0) 98.06%)
+    .box-circle:nth-child(3) .circle
+        background: linear-gradient(92.58deg, #1BA3C0 2.16%, rgba(27, 163, 192, 0) 98.06%)
+    .box-circle:nth-child(4) .circle   
+        background: linear-gradient(92.58deg, #7113BB 2.16%, rgba(113, 19, 187, 0) 98.06%)
+
+.how-it-works
+    h2
+        text-align: center
+        max-width: 940px
+        margin: 0 auto 80px
+    .video
+        height: auto
+
+.catalog
+    .catalog_btn
+        margin: 0 auto
+        padding: 16px 49px
+        @media (max-width: 768px)
+            margin-top: 45px 
+    .products_row
+        display: flex
+        justify-content: center
+        flex-wrap: wrap
+        @media (max-width: 767px)
+            flex-wrap: nowrap
+            overflow-x: scroll
+            justify-content: flex-start
+        
+        .products_col
+            position: relative
+            margin: 4rem 0 5rem
+            text-align: center
+            @media (max-width: 992px)
+                margin: 4rem 0 2rem
+            @media (max-width: 767px)
+                width: 420px
+                max-width: 100%
+                flex: none
+            .product_card
+                position: relative
+                min-width: 260px
+                max-width: 310px
+                margin: 0 auto
+                .product_card-inner
+                    position: relative
+                    display: block
+                    z-index: 9
+                    .product_card-back
+                        position: absolute
+                        top: 50px
+                        width: 300px
+                        height: 300px
+                        border-radius: 50%
+                        background: #2f1d5e
+                        transition: transform .9s cubic-bezier(0,0,0,1),-webkit-transform .9s cubic-bezier(0,0,0,1)
+                        transform: translate3d(-50%,0,0)
+                        left: 50%
+                        -webkit-backface-visibility: hidden
+                        backface-visibility: hidden
+                        will-change: transform
+                    .product-card_image
+                        overflow: hidden
+                        transition: transform .35s cubic-bezier(0,0,0,1),-webkit-transform .35s cubic-bezier(0,0,0,1)
+                        position: relative
+                        height: 400px
+                        display: flex
+                        justify-content: center
+                        align-items: center
+                        transition: transform .35s cubic-bezier(0,0,0,1),-webkit-transform .35s cubic-bezier(0,0,0,1)
+                        img
+                            display: block
+                            height: 485px
+                            opacity: 1
+                            position: absolute
+                            top: 50%
+                            left: 50%
+                            -webkit-transform: translate3d(-50%,-50%,0)
+                            transform: translate3d(-50%,-50%,0)
+                            transition: .3s
+                            pointer-events: none
+                            &:hover
+                                transition: transform .35s cubic-bezier(0,0,0,1),-webkit-transform .35s cubic-bezier(0,0,0,1)
+                    .product_summary
+                        font-family: 'ProximaNova-Bold', sans-serif
+                        transition: transform .35s cubic-bezier(0,0,0,1),-webkit-transform .35s cubic-bezier(0,0,0,1)
+                        margin-top: 2rem
+                        .radio-tabs
+                            display: flex
+                            width: 100%
+                            justify-content: center
+                            overflow: hidden
+                            a
+                                &:hover
+                                    color: #fff
+                            .radio-item
+                                flex: 1
+                                border-radius: 0
+                                margin: 0
+                                text-align: center
+                                font-size: 14px
+                                line-height: 28px
+                                font-weight: 600
+                                color: inherit
+                                padding: 0.2rem 1rem
+                                display: inline-block
+                                vertical-align: top
+                            .checked
+                                box-shadow: none
+                                background: rgba(255,255,255,.3)
+                                color: #fff
+                                border-radius: 6px
+                        .product-card_title
+                            
+                            display: block
+                            margin: 2rem 0 0
+                            font-size: 21px
+                            line-height: 32px
+                        
+                        .product-card_price
+                            font-size: 21px
+                            margin: 1rem 0 0
+                            
+                            line-height: 1
+                            white-space: nowrap
+    .product_card:hover
+        z-index: 10
+        .product-card_image
+            transform: translate3d(0,0,0) scale(1.1)
+    .product_card:hover
+        .product_card-back
+            transform: translate3d(-50%,0,0) scale(1.16) !important
+
+.about
+    h3
+        color: #FFFFFF
+        font-weight: 600
+        font-size: 64px
+        line-height: 77px
+        @media (max-width: 1200px)
+            font-size: 40px
+            line-height: 125% 
+        @media (max-width: 768px)
+            font-size: 35px
+            line-height: 125%  
+    .about_wrapper
+        display: flex
+        justify-content: space-between
+        .about-item
+            width: 360px
+            height: 420px
+            .card-press
+                line-height: 1.3
+                margin: auto
+                position: relative
+                text-align: center
+                .card-press__image
+                    border-radius: 6px
+                    position: relative
+                    max-width: 311px
+                    padding-bottom: 70px
+                    margin: 0 auto
+                    font-weight: 400
+                    max-height: 310px
+                    .card-press__link
+                        margin-top: 10px 
+                        max-height: 310px
+            .card-press_bg
+                display: block
+                transition: transform .35s cubic-bezier(0,0,0,1),-webkit-transform .35s cubic-bezier(0,0,0,1)
+            .card-press_logo
+                max-width: 100px
+                position: absolute
+                top: 50%
+                left: 50%
+                margin: -50px -50px
+            .card-press_text
+                position: absolute
+                left: 0
+                bottom: -70px
+                -webkit-transform-origin: 50% 0
+                transform-origin: 50% 0
+                transition: transform .35s cubic-bezier(0,0,0,1),-webkit-transform .35s cubic-bezier(0,0,0,1)
+    .swiper-pagination
+        bottom: -7% !important
+        .swiper-pagination-bullet
+            width: 10px
+            height: 10px
+            margin: 5px 7px
+            background: #d6d6d6
+            
+            -webkit-backface-visibility: visible
+            transition: opacity .2s
+            border-radius: 30px
+    .swiper-slide
+        @media (max-width: 1200px)
+            display: flex
+            justify-content: center
+
+.card-press:hover
+    .card-press_bg
+        -webkit-transform: rotate(10deg)
+        transform: rotate(10deg)
+    .card-press_text
+        color: rgba(255,255,255,.5)
+        -webkit-transform: scale(1.1)
+        transform: scale(1.1)
+
+.page_navigation
+    margin-bottom: 60px
+    .breadcrumb
+        margin: 0    
+    .main_breadcrumbs
+        padding: 14px
+        border-top: 1px solid #C0C2CC
+        border-bottom: 1px solid #C0C2CC
+        a
+            font-weight: 400
+            font-size: 14px
+            line-height: 125%
+            color: #818699
+
+.footer
+    padding-bottom: 120px
+    @media (max-width: 768px)
+        padding-bottom: 50px
+    .footer_top
+        display: flex
+        flex-direction: column
+        align-items: center
+        margin-bottom: 42px
+        a
+            padding-bottom: 40px
+            &:hover
+                color: #ff6732
+        img
+            width: 135px
+            height: 40px
+            
+        .links_box
+            gap: 25px
+    .footer_navigation
+        margin-bottom: 42px
+        .footer_list
+            display: flex
+            justify-content: space-between
+            @media (max-width: 992px)
+                flex-wrap: wrap
+                gap: 10px
+            li
+                font-size: 14px
+                line-height: 17px
+                padding-bottom: 2px
+                white-space: nowrap
+                width: fit-content
+                &:hover
+                    a
+                        color: #FFFFFF
+                        border-bottom: 0.5px solid #FFFFFF
+    small
+        display: flex
+        text-align: center
+        max-width: 740px
+        margin: 0 auto
+        opacity: 0.4
+        font-weight: 400
+        font-size: 14px
+        line-height: 18px
+
+
+//accordion
+
+.accordion-body
+    max-width: 925px
+    .accordion-link
+        color: #FF6732
+        border-bottom: 1px solid #FF6732
+        &:hover
+            border-bottom: 1px solid #fff
+    span
+        font-family: 'ProximaNova-Bold', sans-serif
+        font-weight: 700
+        font-size: 18px
+        line-height: 125%
+        margin-bottom: 8px
+    p
+        line-height: 22.5px
+    .payments-box
+        align-items: center
+        gap: 20px
+    .condition_wrapper
+        gap: 32px
+        @media (max-width: 1400px)
+            overflow-x: scroll
+        .condition_description
+            position: absolute
+            padding: 0 16px
+            width: 246px
+            height: 292px
+            top: 0
+            transform: translate(10px, 105px)
+            p
+                font-size: 18px
+                font-weight: 400
+                line-height: 125%
+        
+
+
+.accordion_concepts .accordion-item
+    background: inherit
+    background-color: inherit
+
+.accordion-button:not(.collapsed)
+    box-shadow: none
+
+.accordion-button:not(.collapsed), .accordion-button
+    background-color: inherit
+    color: #FFFFFF
+
+.accordion-button .collapsed
+    color: #FFFFFF
+    
+.accordion-button .collapsed, .accordion-button
+    padding: 32px 0 32px 0px
+
+.accordion-button:focus
+    border-color: inherit
+    box-shadow: none
+
+.accordion-item, .accordion-flush .accordion-item:first-child, .accordion-flush .accordion-item:last-child
+    border: none
+
+.accordion-item:first-of-type, .accordion-item
+    border-radius: 0
+
+.accordion-button
+    font-weight: 700
+    font-size: 35px
+    line-height: 120%
+    
+.accordion-button::after
+    background-image: url('/svg/accordion_btn.svg') !important
+
+
+.accordion-body
+    padding: 5px
+    color: #FFFFFF
