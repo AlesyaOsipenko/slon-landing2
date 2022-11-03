@@ -490,11 +490,6 @@ h4 {
 .banner .row {
   border-bottom: 2px solid #FFFFFF;
 }
-@media (max-width: 992px) {
-  .banner .row {
-    border: none;
-  }
-}
 .banner .row .mainLogo-wrapper {
   max-width: 536px;
   margin-bottom: 72px;
@@ -510,8 +505,20 @@ h4 {
 @media (max-width: 992px) {
   .banner .row .mainBanner-wrapper img {
     height: 100%;
+    -o-object-fit: cover;
+       object-fit: cover;
+  }
+}
+@media (max-width: 800px) {
+  .banner .row .mainBanner-wrapper img {
     -o-object-fit: contain;
        object-fit: contain;
+  }
+}
+@media (max-width: 768px) {
+  .banner .row .mainBanner-wrapper img {
+    -o-object-fit: cover;
+       object-fit: cover;
   }
 }
 .banner .row .col-lg-6, .banner .row .col-md-6, .banner .row .col-sm-6 {
@@ -521,6 +528,16 @@ h4 {
   padding-left: 60px;
   padding-top: 60px;
 }
+@media (max-width: 992px) {
+  .banner .row .col--right {
+    padding-left: 0px;
+  }
+}
+@media (max-width: 800px) {
+  .banner .row .col--right {
+    padding-top: 100px;
+  }
+}
 @media (max-width: 768px) {
   .banner .row .col--right {
     display: -webkit-box;
@@ -529,6 +546,7 @@ h4 {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
+    padding-top: 60px;
   }
 }
 .banner .row .banner_subtitle {
@@ -540,7 +558,17 @@ h4 {
   font-size: 24px;
   line-height: 29px;
 }
-.banner .row .banner_btn {
+@media (max-width: 800px) {
+  .banner .row .button_wrapper {
+    margin-bottom: 20px;
+  }
+}
+@media (max-width: 760px) {
+  .banner .row .button_wrapper {
+    margin-bottom: 0px;
+  }
+}
+.banner .row .button_wrapper .banner_btn {
   padding: 18px 33px;
 }
 
@@ -1049,7 +1077,7 @@ h4 {
   gap: 25px;
 }
 .footer .footer_navigation {
-  margin-bottom: 42px;
+  margin-bottom: 24px;
 }
 .footer .footer_navigation .footer_list {
   display: -webkit-box;
@@ -1078,6 +1106,15 @@ h4 {
 .footer .footer_navigation .footer_list li:hover a {
   color: #FFFFFF;
   border-bottom: 0.5px solid #FFFFFF;
+}
+.footer .footer_link {
+  margin-bottom: 42px;
+}
+.footer .footer_link a {
+  width: 215px;
+}
+.footer .footer_link a:hover {
+  color: #FFFFFF;
 }
 .footer small {
   display: -webkit-box;

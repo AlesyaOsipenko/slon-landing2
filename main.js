@@ -34,6 +34,7 @@ const swiper = new Swiper('.about .swiper', {
     // If we need pagination
     pagination: {
         el: '.about .swiper-pagination',
+        clickable: true
     },
 
 

@@ -360,8 +360,6 @@ h4
     
     .row
         border-bottom: 2px solid #FFFFFF
-        @media (max-width: 992px)
-            border: none
         .mainLogo-wrapper
             max-width: 536px
             margin-bottom: 72px
@@ -372,24 +370,38 @@ h4
             img
                 @media (max-width: 992px)
                     height: 100%
+                    object-fit: cover
+                @media (max-width: 800px)
                     object-fit: contain
+                @media (max-width: 768px)
+                    object-fit: cover
         .col-lg-6, .col-md-6, .col-sm-6
             z-index: 1
         .col--right
             padding-left: 60px
             padding-top: 60px
+            @media (max-width: 992px)
+                padding-left: 0px
+            @media (max-width: 800px)
+                padding-top: 100px
             @media (max-width: 768px)
                 display: flex
                 justify-content: center
+                padding-top: 60px
         .banner_subtitle
             font-weight: 800
             margin-bottom: 15px
         .banner_description
             font-weight: 400
             font-size: 24px
-            line-height: 29px  
-        .banner_btn
-            padding: 18px 33px
+            line-height: 29px
+        .button_wrapper
+            @media (max-width: 800px)
+                margin-bottom: 20px
+            @media (max-width: 760px)
+                margin-bottom: 0px
+            .banner_btn
+                padding: 18px 33px
 
 .samsung-description
     .logo_box
@@ -729,7 +741,7 @@ h4
         .links_box
             gap: 25px
     .footer_navigation
-        margin-bottom: 42px
+        margin-bottom: 24px
         .footer_list
             display: flex
             justify-content: space-between
@@ -746,6 +758,12 @@ h4
                     a
                         color: #FFFFFF
                         border-bottom: 0.5px solid #FFFFFF
+    .footer_link
+        margin-bottom: 42px
+        a
+            width: 215px
+            &:hover 
+                color: #FFFFFF
     small
         display: flex
         text-align: center
